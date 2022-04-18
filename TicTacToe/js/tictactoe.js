@@ -105,7 +105,7 @@ function checkWinConditions() {
     //squares are selected the code executes.
     else if (selectedSquares.length >= 9) {
         //This function plays the tie game sound.
-        Audio('./media/tie.mp3');
+        audio('./media/tie.mp3');
         // This function sets a .3 second timer before the resetGame is called.
         setTimeout(function () { resetGame(); }, 1000);
     }
@@ -134,7 +134,7 @@ function disableClick() {
 //placement sound ('./media/place.mp3')
 function audio(audioURL) {
     //We create a new audio object and we pass the path as a parameter.
-    let audio = new Audio(audioURL);
+    let audio = new audio(audioURL);
     //Play method plays our audio sound.
     audio.play();
 }
