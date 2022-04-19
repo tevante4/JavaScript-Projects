@@ -1,7 +1,7 @@
 document.write(typeof 9);
 document.write("49" + 2);
-document.getElementById("Infinity").innerHTML = "4E10";
-document.getElementById("NInfinity")
+document.getElementById("infinity").innerHTML = "4E10";
+// document.getElementById("Ninfinity")
 function nan_function() { // Not a number function
     document.getElementById("nan").innerHTML = 0/0;
 }
@@ -41,7 +41,7 @@ function te2_function() {
     document.getElementById("te2").innerHTML = (C === D);
 }
 E = 33
-F = "33"
+F = "34"
 function te3_function() {
     document.getElementById("te3").innerHTML = (E === F);
 }
@@ -49,6 +49,9 @@ G = 21
 H = 22
 function te4_function() {
     document.getElementById("te4").innerHTML = (G === H);
+}
+function te5_function() {
+    document.getElementById("te5").innerHTML = (E+F);
 }
 function blo_function() { // Boolean logic function
     document.getElementById("blo").innerHTML = (10 > 5 && 3 > 1);
